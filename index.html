@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>FWS—简单容易上手的前端工作流脚手架</title>
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="vendor/themes/vue.css">
+  <link rel="shortcut icon" href="_media/favicon.ico" type="image/x-icon">
+  <style>
+    .cover-main img {
+      width: 220px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+<script src="//unpkg.com/docsify-edit-on-github@1.0.1/index.js"></script>
+<script>
+  window.$docsify = {
+    name: 'FWS',
+    repo: 'sbfkcel/fws',
+    coverpage:true,
+    loadSidebar:true,
+    themeColor: '#f8458a',
+    subMaxLevel: 2,
+    homepage:'zh-cn/about.md',
+    search: {
+      noData: {
+        '/de-de/': 'Keine Ergebnisse!',
+        '/zh-cn/': '没有结果!',
+        '/': 'No results!'
+      },
+      paths: 'auto',
+      placeholder: {
+        '/de-de/': 'Suche',
+        '/zh-cn/': '搜索',
+        '/': 'Search'
+      }
+    },
+    //插件
+    plugins:[
+      EditOnGithubPlugin.create(
+        'https://github.com/sbfkcel/fws/tree/gh-pages/',
+        '',
+        'Edit'
+      )
+    ]
+  };
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-scss.js"></script>
+<script src="https://rawcdn.githack.com/PrismJS/prism/gh-pages/components/prism-pug.js"></script>
+<script>
+  //离线模式支持
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  };
+</script>
+</html>
