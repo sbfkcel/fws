@@ -1,0 +1,12 @@
+extends _defaultPage
+
+block link
+    link(rel="stylesheet", href="./css/style.css")
+
+block body
+    div.hello Hello
+    div.footer!= copyText
+
+block script
+    script
+        |seajs.use('./js/main.js')

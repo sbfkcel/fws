@@ -1,0 +1,17 @@
+extends _defaultPage
+
+block link
+    link(rel="stylesheet", href="./css/style.css")
+
+block body
+    div.hello
+        a.sprite.sprite--h1(href='javascript:void(0)')
+        a.sprite.sprite--e1(href='javascript:void(0)')
+        a.sprite.sprite--l1(href='javascript:void(0)')
+        a.sprite.sprite--l2(href='javascript:void(0)')
+        a.sprite.sprite--o1(href='javascript:void(0)')
+    div.footer!= copyText
+
+block script
+    script
+        |seajs.use('./js/main.js')

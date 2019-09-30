@@ -1,0 +1,23 @@
+{
+    "//":"使用`fws commit`提交代码时将过滤所有文件",
+    "dirs":[
+        "node_modules",
+        ".git"
+    ],
+    "files":[
+        ".DS_Store",
+        "Thumbs.db",
+        "thumbs.db",
+        "desktop.ini",
+        "*.tmp",
+        "*.psd",
+        "*.psb",
+        "*.ppt",
+        "*.pptx",
+        "*.rp",
+        "*.xls",
+        "*.xlsx",
+        "*.doc",
+        "*.docx"
+    ]
+}
