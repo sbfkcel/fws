@@ -2,7 +2,6 @@
 
 FWS依赖于**node 7.6.0**或以上版本（需支持`async`语法）。
 
-{docsify-updated}
 
 !> 国内网络环境建议安装`cnpm`（当然这不是必须的）。
 
